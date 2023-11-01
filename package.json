@@ -5,10 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "npx eslint --fix",
     "start": "node index.js",
-    "dev": "npm run lint && nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",

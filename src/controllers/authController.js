@@ -58,7 +58,6 @@ class authController {
             next(err)
         }
     }
-
 }
 
 export default new authController();

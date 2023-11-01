@@ -17,5 +17,6 @@ export const CONFLICT_CODE = 409;
 export const UNSUPPORTED_MEDIA_TYPE_CODE = 415;
 
 export const VALIDATION_ERROR_CODE = 422;
+export const  SERVER_ERROR = 500
 
 export const SERVICE_UNAVAILABLE_CODE = 503;

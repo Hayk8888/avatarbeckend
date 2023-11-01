@@ -6,7 +6,7 @@ import {
     VALIDATION_ERROR_CODE,
     UNSUPPORTED_MEDIA_TYPE_CODE,
     CONFLICT_CODE,
-    NOT_FOUND_CODE
+    NOT_FOUND_CODE, SERVER_ERROR
 } from './status-codes.js';
 import {
     PERMISSION_DENIED,
@@ -108,6 +108,18 @@ export class ExternalApiError extends Error {
         this.errors = errors;
     }
 }
+
+export  class  ServerError extends Error {
+    status = SERVER_ERROR
+    message = "Server Error"
+    errors
+
+    constructor(errors) {
+        super();
+        this.error = errors;
+    }
+}
+
 
 export class ServiceUnavailable extends Error {
     status = BAD_REQUEST_CODE;
